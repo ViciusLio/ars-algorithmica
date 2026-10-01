@@ -1,6 +1,6 @@
 # ars-algorithmica
 
-**A sound workshop — *una bottega sonora* — for music written as code.**
+**A sound workshop (*una bottega sonora*) for music written as code.**
 
 In a Renaissance *bottega*, apprentices learned a craft by making real pieces under real
 constraints. This repository works the same way: each experiment is a piece of music
@@ -16,10 +16,11 @@ verification.
 
 | # | Experiment | What it explores |
 |---|---|---|
-| 01 | [Fuga a due voci in Re minore](experiments/01-fuga-re-minore/) | A 74-bar two-part fugue for two flutes in the style of J.S. Bach. Subject, tonal answer, invertible countersubject, inversion and strettos are derived by diatonic transformations, and a verifier checks range, parallel fifths/octaves, dissonance treatment, breathing points and every thematic entry. |
+| 01 | [Fuga a due voci in Re minore](experiments/01-fuga-re-minore/) · [listen and read the score](https://viciuslio.github.io/ars-algorithmica/experiments/01-fuga-re-minore/fuga-in-re-minore-ars-algo.html) | A 74-bar two-part fugue for two flutes in the style of J.S. Bach. Subject, tonal answer, invertible countersubject, inversion and strettos are derived by diatonic transformations, and a verifier checks range, parallel fifths/octaves, dissonance treatment, breathing points and every thematic entry. |
 
 Each experiment folder contains its own plan (`PIANO.md`), the generator, the
-verifier, the generated score and MIDI, and a README describing the form bar by bar.
+verifier, the generated score and MIDI, an HTML preview (score, playback with flute
+samples and a clickable map of the form) and a README describing the form bar by bar.
 The experiment documents are written in Italian; the code is commented in Italian.
 
 ## Principles

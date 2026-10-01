@@ -22,33 +22,33 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P767916b28374edfffeccbacf2a807191">
+    <score-part id="Pab5edd72e673c7058d78c4f4b43786f1">
       <part-name>Flauto 1</part-name>
       <part-abbreviation>Fl. 1</part-abbreviation>
-      <score-instrument id="Iae595af61afa7bf5f6132cea3e175bf2">
+      <score-instrument id="I499104be2201fa3b2c1b8d5c2089e778">
         <instrument-name>Flute</instrument-name>
         <instrument-abbreviation>Fl</instrument-abbreviation>
       </score-instrument>
-      <midi-instrument id="Iae595af61afa7bf5f6132cea3e175bf2">
+      <midi-instrument id="I499104be2201fa3b2c1b8d5c2089e778">
         <midi-channel>1</midi-channel>
         <midi-program>74</midi-program>
       </midi-instrument>
     </score-part>
-    <score-part id="P47331ee34b960a72ba7005b7b8c3a5db">
+    <score-part id="P36a324e351afeac02f00511b6ceb11bd">
       <part-name>Flauto 2</part-name>
       <part-abbreviation>Fl. 2</part-abbreviation>
-      <score-instrument id="Ia1c36efbee13590d81b41bd579d5a2c1">
+      <score-instrument id="Ib6bca9cc61634a665602495540969934">
         <instrument-name>Flute</instrument-name>
         <instrument-abbreviation>Fl</instrument-abbreviation>
       </score-instrument>
-      <midi-instrument id="Ia1c36efbee13590d81b41bd579d5a2c1">
+      <midi-instrument id="Ib6bca9cc61634a665602495540969934">
         <midi-channel>2</midi-channel>
         <midi-program>74</midi-program>
       </midi-instrument>
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P767916b28374edfffeccbacf2a807191">
+  <part id="Pab5edd72e673c7058d78c4f4b43786f1">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -5987,7 +5987,7 @@
     </measure>
   </part>
   <!--=========================== Part 2 ===========================-->
-  <part id="P47331ee34b960a72ba7005b7b8c3a5db">
+  <part id="P36a324e351afeac02f00511b6ceb11bd">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>

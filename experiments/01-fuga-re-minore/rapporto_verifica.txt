@@ -6,11 +6,11 @@ Flauto 1: 74 battute, tutte complete (4/4)
 Flauto 2: 74 battute, tutte complete (4/4)
 OK: 74 battute (minimo richiesto 70)
 
-2. Estensione (D4–A6)
+2. Estensione (D4-A6)
 ---------------------
-Flauto 1: da C5 a F6 — OK
+Flauto 1: da C5 a F6: OK
    sopra E6 (culmini previsti): b.53 q4½ F6, b.58 q1½ F6
-Flauto 2: da D4 a Bb5 — OK
+Flauto 2: da D4 a Bb5: OK
 
 3. Quinte e ottave parallele
 ----------------------------
@@ -38,8 +38,8 @@ b.72 q1    Flauto 1  Soggetto         Re minore    da D5   testa e arpeggio (11/
 Dissonanze sui tempi non preparate/non risolte: nessuna
 Incroci delle voci: nessuno
 Attacchi oltre la decima: 25 su 589 (soprattutto semicrome di passaggio, controsoggetto rivoltato e pedali)
-Respiri Flauto 1: tratto più lungo senza pause né note lunghe 5.2 battute (da b.56 q4) — OK
-Respiri Flauto 2: tratto più lungo senza pause né note lunghe 6.0 battute (da b.33 q3) — OK
+Respiri Flauto 1: tratto più lungo senza pause né note lunghe 5.2 battute (da b.56 q4): OK
+Respiri Flauto 2: tratto più lungo senza pause né note lunghe 6.0 battute (da b.33 q3): OK
 
 Esito
 -----

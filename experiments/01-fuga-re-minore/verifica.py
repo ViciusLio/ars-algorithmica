@@ -86,14 +86,14 @@ def verifica(file: Path) -> tuple[list[str], int]:
     (s1, e1), (s2, e2) = voci
 
     # 2. estensione ------------------------------------------------------------
-    titolo(f"2. Estensione ({ESTENSIONE[0]}–{ESTENSIONE[1]})")
+    titolo(f"2. Estensione ({ESTENSIONE[0]}-{ESTENSIONE[1]})")
     for parte, (suoni, _) in zip(parti, voci):
         fuori = an.fuori_estensione(suoni, *ESTENSIONE)
         alte = [s for s in an.fuori_estensione(suoni, ESTENSIONE[0], TESSITURA_ALTA) if s not in fuori]
         bassa = min(suoni, key=lambda s: s.midi)
         alta = max(suoni, key=lambda s: s.midi)
         righe.append(f"{parte.partName}: da {bassa.nome} a {alta.nome}"
-                     + (f" — FUORI ESTENSIONE: {[(an.dove(s.inizio), s.nome) for s in fuori]}" if fuori else " — OK"))
+                     + (f": FUORI ESTENSIONE: {[(an.dove(s.inizio), s.nome) for s in fuori]}" if fuori else ": OK"))
         if alte:
             righe.append(f"   sopra {TESSITURA_ALTA} (culmini previsti): "
                          + ', '.join(f"{an.dove(s.inizio)} {s.nome}" for s in alte))
@@ -139,7 +139,7 @@ def verifica(file: Path) -> tuple[list[str], int]:
         lunghezza = (piu_lungo[1] - piu_lungo[0]) / BATTUTA
         stato = 'OK' if lunghezza <= MAX_SENZA_RESPIRO else 'TROPPO LUNGO'
         righe.append(f"Respiri {parte.partName}: tratto più lungo senza pause né note lunghe "
-                     f"{lunghezza:.1f} battute (da {an.dove(piu_lungo[0])}) — {stato}")
+                     f"{lunghezza:.1f} battute (da {an.dove(piu_lungo[0])}): {stato}")
 
     titolo('Esito')
     righe.append('NESSUN ERRORE' if errori == 0 else f"{errori} ERRORI")

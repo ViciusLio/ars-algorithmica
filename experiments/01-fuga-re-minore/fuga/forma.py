@@ -36,7 +36,7 @@ def _controlla(nome: str, fl1: Voce, fl2: Voce, battute: int) -> None:
 # --- sezioni ---------------------------------------------------------------------
 
 def esposizione() -> tuple[Voce, Voce]:
-    """bb.1–6: soggetto al Flauto 1, risposta tonale al Flauto 2 con controsoggetto sopra."""
+    """bb.1-6: soggetto al Flauto 1, risposta tonale al Flauto 2 con controsoggetto sopra."""
     fl1 = annota(mat.soggetto(), 0, dinamica='mf')
     fl1 += mat.controsoggetto(LA_MINORE, 'A5', contro='risposta')
     fl2 = _pausa(3) + annota(mat.risposta(), 0, dinamica='mf')
@@ -44,7 +44,7 @@ def esposizione() -> tuple[Voce, Voce]:
 
 
 def codetta() -> tuple[Voce, Voce]:
-    """bb.7–8: dalla dominante torna a Re minore sul motivo della coda del soggetto."""
+    """bb.7-8: dalla dominante torna a Re minore sul motivo della coda del soggetto."""
     fl1 = leggi("""
         A5:e r:e E5:s( D5:s E5:s F5:s) G5:e E5:e F5:e A5:e |
         G5:s( F5:s E5:s D5:s) E5:q~ E5:e D5:e C#5:q |""")
@@ -55,7 +55,7 @@ def codetta() -> tuple[Voce, Voce]:
 
 
 def episodio_1() -> tuple[Voce, Voce]:
-    """bb.9–14: marcia per quinte discendenti (Re m – Sol m – Do – Fa) sulla testa
+    """bb.9-14: marcia per quinte discendenti (Re m, Sol m, Do, Fa) sulla testa
     del soggetto, modello di due battute con scambio delle parti; cadenza in Fa."""
     modello_alto = leggi("""
         D5:q A5:q G5:e F5:e G5:e A5:e |
@@ -76,14 +76,14 @@ def episodio_1() -> tuple[Voce, Voce]:
 
 
 def entrata_fa() -> tuple[Voce, Voce]:
-    """bb.15–17: soggetto in Fa maggiore al Flauto 1, controsoggetto rivoltato sotto."""
+    """bb.15-17: soggetto in Fa maggiore al Flauto 1, controsoggetto rivoltato sotto."""
     fl1 = annota(mat.soggetto(FA_MAGGIORE, 'F5'), 0, dinamica='mf')
     fl2 = annota(con_prima_nota(mat.controsoggetto(FA_MAGGIORE, 'F4'), 'F4'), 0, dinamica='mf')
     return fl1, fl2
 
 
 def episodio_2() -> tuple[Voce, Voce]:
-    """bb.18–25: progressione ascendente Fa – Sol m – La m. Ogni coppia di battute
+    """bb.18-25: progressione ascendente Fa, Sol m, La m. Ogni coppia di battute
     porta la testa del soggetto al basso e la volta di semicrome sopra, poi la
     dominante secondaria della tonalità un grado più su; il motivo della coda
     passa da una voce all'altra nella cadenza in La minore."""
@@ -109,9 +109,9 @@ def episodio_2() -> tuple[Voce, Voce]:
 
 
 def entrata_la() -> tuple[Voce, Voce]:
-    """bb.26–28: soggetto in La minore (forma reale) al Flauto 2, controsoggetto sopra.
+    """bb.26-28: soggetto in La minore (forma reale) al Flauto 2, controsoggetto sopra.
     Il soggetto chiude con una croma (respiro prima dell'inverso); il controsoggetto
-    chiude salendo (La–Si → Do) per preparare l'inverso."""
+    chiude salendo (La-Si → Do) per preparare l'inverso."""
     fl2 = annota(mat.soggetto(LA_MINORE, 'A4'), 0, dinamica='mf')
     fl2 = fl2[:-1] + [fl2[-1].con(durata=2)] + leggi('r:e', controlla_battute=False)
     fl1 = con_prima_nota(mat.controsoggetto(LA_MINORE, 'A5'), 'A5')
@@ -120,8 +120,8 @@ def entrata_la() -> tuple[Voce, Voce]:
 
 
 def episodio_3() -> tuple[Voce, Voce]:
-    """bb.29–39: l'inverso del soggetto al Flauto 2 (La minore) e al Flauto 1
-    (Re minore), poi marcia discendente sulla testa invertita (Sol m – Fa – Mi♭)
+    """bb.29-39: l'inverso del soggetto al Flauto 2 (La minore) e al Flauto 1
+    (Re minore), poi marcia discendente sulla testa invertita (Sol m, Fa, Mi♭)
     e cadenza in Sol minore."""
     inv_la = annota(mat.inverso(LA_MINORE, 'E5'), 0, dinamica='p')
     fl2 = inv_la
@@ -148,15 +148,15 @@ def episodio_3() -> tuple[Voce, Voce]:
 
 
 def entrata_sol() -> tuple[Voce, Voce]:
-    """bb.40–42: soggetto in Sol minore al Flauto 1, controsoggetto rivoltato sotto."""
+    """bb.40-42: soggetto in Sol minore al Flauto 1, controsoggetto rivoltato sotto."""
     fl1 = annota(mat.soggetto(SOL_MINORE, 'G5'), 0, dinamica='mf')
     fl2 = annota(con_prima_nota(mat.controsoggetto(SOL_MINORE, 'G4'), 'G4'), 0, dinamica='mf')
     return fl1, fl2
 
 
 def episodio_4() -> tuple[Voce, Voce]:
-    """bb.43–50: gli arpeggi di settima diminuita del soggetto passano da una voce
-    all'altra riportando a Re minore; poi basso cromatico discendente (Re–Do♯–Do–Si–Si♭–La)
+    """bb.43-50: gli arpeggi di settima diminuita del soggetto passano da una voce
+    all'altra riportando a Re minore; poi basso cromatico discendente (Re-Do♯-Do-Si-Si♭-La)
     con ritardi sopra, in crescendo, fino alla semicadenza sulla dominante."""
     fl1 = leggi("""
         Bb5:q r:e G5:e F#5:e( A5:e C6:e Eb6:e) |
@@ -180,7 +180,7 @@ def episodio_4() -> tuple[Voce, Voce]:
 
 
 def stretti() -> tuple[Voce, Voce]:
-    """bb.51–59. Stretto I: soggetto al Flauto 2, risposta alla quinta sopra al
+    """bb.51-59. Stretto I: soggetto al Flauto 2, risposta alla quinta sopra al
     Flauto 1 dopo sei quarti. Stretto II: inverso al Flauto 2, risposta al Flauto 1
     dopo tre quarti. Le voci che guidano adattano la coda."""
     s = mat.soggetto()
@@ -199,7 +199,7 @@ def stretti() -> tuple[Voce, Voce]:
 
 
 def pedale_dominante() -> tuple[Voce, Voce]:
-    """bb.60–65: pedale di La al Flauto 2; sopra, frammenti di soggetto e inverso."""
+    """bb.60-65: pedale di La al Flauto 2; sopra, frammenti di soggetto e inverso."""
     fl1 = leggi("""
         C#5:e( E5:e G5:e Bb5:e) A5:q G5:e( F5:e) |
         E5:s( D5:s E5:s F5:s) G5:e( E5:e) F5:e( D5:e) E5:q |
@@ -212,8 +212,8 @@ def pedale_dominante() -> tuple[Voce, Voce]:
 
 
 def ultima_entrata() -> tuple[Voce, Voce]:
-    """bb.66–68: ultima entrata del soggetto in Re minore al Flauto 1; sotto, il
-    controsoggetto adattato (il Do♯4 è sotto l'estensione) che chiude con V–I."""
+    """bb.66-68: ultima entrata del soggetto in Re minore al Flauto 1; sotto, il
+    controsoggetto adattato (il Do♯4 è sotto l'estensione) che chiude con V-I."""
     fl1 = mat.soggetto()
     fl2 = leggi("""
         D4:q F4:s( E4:s F4:s A4:s) D4:q F4:s( E4:s D4:s F4:s) |
@@ -223,7 +223,7 @@ def ultima_entrata() -> tuple[Voce, Voce]:
 
 
 def coda() -> tuple[Voce, Voce]:
-    """bb.69–74: la testa al basso, la coda del soggetto sopra, poi pedale di tonica
+    """bb.69-74: la testa al basso, la coda del soggetto sopra, poi pedale di tonica
     con l'arpeggio diminuito dell'inverso e chiusura sulla terza piccarda."""
     fl1 = leggi("""
         D5:q r:e E5:e A5:e( G5:e) F5:q |
@@ -241,7 +241,7 @@ def coda() -> tuple[Voce, Voce]:
 
 SEZIONI_DEF = [
     ('Esposizione', 6, esposizione, 'Re minore → La minore',
-     'Soggetto al Flauto 1 (bb.1–3); risposta tonale al Flauto 2 con controsoggetto al Flauto 1 (bb.4–6).'),
+     'Soggetto al Flauto 1 (bb.1-3); risposta tonale al Flauto 2 con controsoggetto al Flauto 1 (bb.4-6).'),
     ('Codetta', 2, codetta, 'La minore → Re minore', 'Coda del soggetto, ritorno alla tonica.'),
     ('Episodio 1', 6, episodio_1, 'Re minore → Fa maggiore',
      'Marcia per quinte discendenti sulla testa del soggetto, cadenza perfetta in Fa.'),
@@ -252,13 +252,13 @@ SEZIONI_DEF = [
     ('Entrata in La minore', 3, entrata_la, 'La minore',
      'Soggetto (forma reale) al Flauto 2, controsoggetto al Flauto 1.'),
     ('Episodio 3', 11, episodio_3, 'La minore → Re minore → Sol minore',
-     'Inverso al Flauto 2 (bb.29–31) e al Flauto 1 (bb.32–34), marcia sulla testa invertita, cadenza in Sol minore.'),
+     'Inverso al Flauto 2 (bb.29-31) e al Flauto 1 (bb.32-34), marcia sulla testa invertita, cadenza in Sol minore.'),
     ('Entrata in Sol minore', 3, entrata_sol, 'Sol minore',
      'Soggetto al Flauto 1, controsoggetto rivoltato al Flauto 2.'),
     ('Episodio 4', 8, episodio_4, 'Sol minore → Re minore',
      'Arpeggi di settima diminuita fra le voci, basso cromatico discendente, semicadenza su La.'),
     ('Stretti', 9, stretti, 'Re minore',
-     'Stretto I (bb.51–55): soggetto e risposta a sei quarti. Stretto II (bb.56–59): inverso e risposta a tre quarti.'),
+     'Stretto I (bb.51-55): soggetto e risposta a sei quarti. Stretto II (bb.56-59): inverso e risposta a tre quarti.'),
     ('Pedale di dominante', 6, pedale_dominante, 'Re minore (V)',
      'La tenuto al Flauto 2, frammenti del soggetto e dell\'inverso al Flauto 1.'),
     ('Ultima entrata', 3, ultima_entrata, 'Re minore', 'Soggetto al Flauto 1, cadenza perfetta.'),

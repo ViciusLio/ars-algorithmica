@@ -40,7 +40,7 @@ def risposta(inizio: str = 'A4') -> Voce:
     """Risposta tonale: trasposizione alla dominante con mutazione della testa.
 
     Nella testa (prima della sensibile) ogni nota che nel soggetto è dominante
-    viene risposta con la tonica: Re–La diventa La–Re invece di La–Mi.
+    viene risposta con la tonica: Re-La diventa La-Re invece di La-Mi.
     """
     s = soggetto()
     reale = soggetto(LA_MINORE, inizio)
