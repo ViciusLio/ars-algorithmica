@@ -14,6 +14,7 @@ from pathlib import Path
 from .forma import Sezione
 
 TITOLO_PAGINA = 'Fuga in Re minore · ars-algo'
+DEDICA = 'Questo primo esperimento è dedicato alla mia cara Amica Annalisa.'
 SECONDI_PER_BATTUTA = 4 * 60 / 80  # 4/4 a ♩ = 80
 REPO = 'https://github.com/ViciusLio/ars-algorithmica'
 
@@ -40,7 +41,8 @@ _MODELLO = """<!doctype html>
   header { margin-bottom: 28px; }
   .marchio { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--accento); font-weight: 600; }
   h1 { font: 600 clamp(36px, 6vw, 56px)/1.05 'EB Garamond', Georgia, serif; margin: 6px 0 6px; }
-  .sottotitolo { font: italic 500 22px/1.3 'EB Garamond', Georgia, serif; color: var(--tenue); margin: 0 0 14px; }
+  .sottotitolo { font: italic 500 22px/1.3 'EB Garamond', Georgia, serif; color: var(--tenue); margin: 0 0 4px; }
+  .dedica { font: italic 500 15px/1.4 'EB Garamond', Georgia, serif; color: var(--accento); margin: 0 0 14px; }
   .dati { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
   .dati li { font-size: 13px; padding: 4px 10px; border: 1px solid var(--linea); border-radius: 999px; background: var(--foglio); }
   section { margin-top: 28px; }
@@ -84,6 +86,7 @@ _MODELLO = """<!doctype html>
     <div class="marchio">ars-algo · esperimento 01</div>
     <h1>Fuga in Re minore</h1>
     <p class="sottotitolo">a due voci per due flauti traversi, nello stile di J.S. Bach</p>
+    <p class="dedica">__DEDICA__</p>
     <ul class="dati">
       <li>__BATTUTE__ battute</li><li>4/4</li><li>Allegro moderato, ♩ = 80</li>
       <li>scritta come codice Python con music21</li>
@@ -201,6 +204,7 @@ def scrivi_anteprima(cartella: Path, nome: str, sezioni: list[Sezione], file_htm
 
     pagina = (_MODELLO
               .replace('__TITOLO__', TITOLO_PAGINA)
+              .replace('__DEDICA__', DEDICA)
               .replace('__BATTUTE__', str(sezioni[-1].ultima))
               .replace('__NOME__', nome)
               .replace('__REPO__', REPO)

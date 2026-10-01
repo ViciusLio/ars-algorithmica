@@ -7,6 +7,8 @@ Ogni nota è generata dal codice: il soggetto è scritto una volta sola, rispost
 controsoggetto, inverso ed entrate nelle altre tonalità si ottengono con funzioni di
 trasformazione, e uno script di verifica controlla il risultato sul file MusicXML.
 
+*Questo primo esperimento è dedicato alla mia cara Amica Annalisa.*
+
 **[▶ Ascolta e leggi la partitura online](https://viciuslio.github.io/ars-algorithmica/experiments/01-fuga-re-minore/fuga-in-re-minore-ars-algo.html)**
 
 | File | Contenuto |
